@@ -1,0 +1,69 @@
+/*space and styling for the search part of the page*/
+.search_div{
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-top: 250px;
+    text-align: center;
+}
+#srchInput_btn{
+    padding: 20px;
+}
+/*Rounding corners of search bar as per spesifications of the project*/
+.form-rounded{
+    border-radius: 2rem;
+    min-width: 500px;
+}
+/*Styling for picture of lemmingvær */
+#lemming{
+    padding: 25px;
+    width: 500px;
+    height: 250px;
+    border-radius: 3rem;
+}
+
+/*All styling below is related to the advanced search page*/
+
+.adv_searchField {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    padding: 10px 0;
+}
+
+.adv_searchField label {
+    width: 200px;
+    padding-right: 25px;
+}
+
+.adv-form-group {
+    align-items: center;
+    margin-top: 10px;
+    padding-top: 75px;
+    padding-left: 75px;
+}
+
+.form-input {
+    width: 600px;
+    border-style: solid;
+    border-color: gray;
+    border-width: 1px;
+    align-items: left;
+    margin: 10px;
+}
+
+.form-input:focus {
+    outline: none !important;
+    border-style: solid;
+    border-color: dodgerblue;
+    border-width: 2px;
+}
+#adv-header{
+    color: red;
+    font-size: 30px;
+    padding-top: 25px;
+    padding-left: 10px;
+}
+#adv-header hr{
+    color: gray;
+    size: 5px;
+}
