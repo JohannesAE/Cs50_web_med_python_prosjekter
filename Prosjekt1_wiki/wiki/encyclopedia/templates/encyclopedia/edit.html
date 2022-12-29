@@ -1,0 +1,29 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+Create new wiki entry
+{% endblock %}
+
+{% block body %}
+<h1>Edit this wiki entry</h1>
+<a
+    href="https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax">Please
+    look at this guide for writing markdown content</a>
+
+<form action="{% url 'edit' title=title %}" method="post">
+    {% if messages %}
+    <ul class="messages">
+        {% for message in messages %}
+        <li{% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</li>
+            {% endfor %}
+    </ul>
+    {% endif %}
+
+    {% csrf_token %}
+    <h2>{{ title }}</h2>
+    {{ pagecontent.content }}
+    <br>
+    <input type="submit" , value="Submit entry">
+</form>
+
+{% endblock %}

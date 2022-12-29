@@ -1,0 +1,13 @@
+{% extends "encyclopedia/layout.html" %}
+
+<!--loading in title-->
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block body %}
+<!--loading in page content-->
+{{ pagecontent | safe }}
+<br>
+<a href="{% url 'edit' title=title %}">Edit this wiki entry</a>
+{% endblock %}
